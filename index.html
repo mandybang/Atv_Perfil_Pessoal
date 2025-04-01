@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com JavaScript 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="perfil">
+        <h2>Meu nome é: Amanda Fonseca</h2>
+        
+        <div class="form-group">
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" placeholder="000.000.000-00" maxlength="14">
+            <span id="cpfError" class="error-message"></span>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" placeholder="seu@email.com">
+            <span id="emailError" class="error-message"></span>
+        </div>
+        
+        <h3>Meus Objetivos Profissionais</h3>
+        <h4><p>Principais Campos de Estudo</p></h4>
+        <ol><li>Dados</li><li>QA</li></ol>
+        <h4><p>Hobbies</p></h4>
+        <ul><li>Leitura</li><li>Ouvir musica</li><li>Conversar</li></ul>
+        <h3>O que eu gostaria de aprender na sala de aula?</h3>
+        <a href='https://www.postman.com'>Postman</a>
+        <a href="https://www.devmedia.com.br/o-que-e-json/23166">JSON</a>
+        <p>Essa abaixo sou eu</p><img src="./img/amanda.jpg" alt="amanda" width="180">
+    </div>
+    
+    <div class="uc-section">
+        <h3>UC QUE ESTOU ESTUDANDO/JÁ ESTUDEI:</h3>
+        <p>Modelagem de Software</p>
+        
+        <div id="ucList">
+            <!-- Aqui ficarão as UC's -->
+        </div>
+        
+        <button id="adicionarInfo">Adicionar UC</button>
+        <div id="nomeInfoForm" style="display:none;">
+            <input type="text" id="novaInfo" placeholder="Insira UC cursada">
+            <button id="salvarInfo">Salvar</button>
+            <button id="cancelarInfo">Cancelar</button>
+        </div>
+    </div>
+    
+    <div class="profile-info">
+        <h3>Adicionar Informações ao Perfil</h3>
+        <div>
+            <input type="text" id="novaInfoPerfil" placeholder="Nova informação sobre você">
+            <button id="adicionarInfoPerfil">Adicionar</button>
+        </div>
+    </div>
+
+    <h6><footer>
+        E-mail de contato estudantil: amandafj.estudante@gmail.com ou entre em contato pelo email amandafj.50@gmail.com
+    </footer></h6>
+    <script src="script.js"></script>
+</body>
+</html>
